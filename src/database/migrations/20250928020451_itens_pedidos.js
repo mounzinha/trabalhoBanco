@@ -1,4 +1,8 @@
-export async function up(knex) {
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.up = function (knex) {
   return knex.schema.createTable("itens_pedidos", (table) => {
     table.increments("id").primary();
     table
@@ -18,8 +22,12 @@ export async function up(knex) {
     table.integer("quantidade").notNullable();
     table.decimal("preco_unitario", 10, 2).notNullable();
   });
-}
+};
 
-export async function down(knex) {
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.down = function (knex) {
   return knex.schema.dropTable("itens_pedidos");
-}
+};

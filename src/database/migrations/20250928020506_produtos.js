@@ -1,4 +1,8 @@
-export async function up(knex) {
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.up = function (knex) {
   return knex.schema.createTable("produtos", (table) => {
     table.increments("id").primary();
     table.string("nome").notNullable();
@@ -12,8 +16,12 @@ export async function up(knex) {
       .inTable("marcas")
       .onDelete("CASCADE");
   });
-}
+};
 
-export async function down(knex) {
+/**
+ * @param { import("knex").Knex } knex
+ * @returns { Promise<void> }
+ */
+exports.down = function (knex) {
   return knex.schema.dropTable("produtos");
-}
+};
