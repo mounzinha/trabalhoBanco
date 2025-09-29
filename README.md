@@ -1,6 +1,6 @@
 # trabalhoBanco
 
-Ana Julia de Paiva
+-- Ana Julia de Paiva
 
 ## API de Gerenciamento de Pedidos
 Este projeto tem como objetivo a criação de uma API RESTful para gerenciar um sistema de pedidos, utilizando Node.js, MySQL e Knex.js.. A API permite operações de CRUD em diversas tabelas e gerencia os relacionamentos entre elas.
