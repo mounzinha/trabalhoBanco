@@ -2,10 +2,10 @@
 
 Ana Julia de Paiva
 
-##API de Gerenciamento de Pedidos
+## API de Gerenciamento de Pedidos
 Este projeto tem como objetivo a criação de uma API RESTful para gerenciar um sistema de pedidos, utilizando Node.js, MySQL e Knex.js.. A API permite operações de CRUD em diversas tabelas e gerencia os relacionamentos entre elas.
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Node.js: Ambiente de execução JavaScript para o backend.
 
 - Fastify: Framework leve e rápido para criação de APIs.
